@@ -3,5 +3,6 @@ $(document).ready(function(){
     $('.header__burger').toggleClass('header__burger_active')
     $('.menu-mobile').toggleClass('menu-mobile_active')
     $('.wrapper').toggleClass('lock');
+    $('body').toggleClass('lock');
   });
 });

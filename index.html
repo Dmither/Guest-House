@@ -9,14 +9,6 @@
 </head>
 <body>
   <div class="wrapper">
-    <nav class="menu-mobile">
-      <ul class="menu__list">
-        <li><a href="#" class="menu__link">Start</a></li>
-        <li><a href="#" class="menu__link">Contact</a></li>
-        <li><a href="#" class="menu__link">Our history</a></li>
-        <a href="#" class="btn">Book now</a>
-      </ul>
-    </nav>
     <header class="header">
       <div class="container">
         <div class="header__container">
@@ -35,6 +27,14 @@
         </div>
       </div>
     </header>
+    <nav class="menu-mobile">
+      <ul class="menu__list">
+        <li><a href="#" class="menu__link">Start</a></li>
+        <li><a href="#" class="menu__link">Contact</a></li>
+        <li><a href="#" class="menu__link">Our history</a></li>
+        <a href="#" class="btn">Book now</a>
+      </ul>
+    </nav>
     <main class="main">
       <article class="intro">
         <div class="container">
@@ -61,7 +61,9 @@
           <h2 class="slogan__content">The Guest House is the perfect weekend getaway cabin.</h2>
         </div>
       </article>
-      <article class="kitchen"></article>
+      <article class="kitchen">
+        <img src="img/jpg/kitchen.jpg" alt="">
+      </article>
       <article class="article sleeping">
         <div class="container">
           <div class="article__orange-rect"></div>
@@ -185,13 +187,81 @@
             </div>
             <div class="come__items">
               <div class="come__item">
-
+                <img src="img/svg/come-1.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="come__item">
+                <img src="img/svg/come-2.svg" alt="">
+                <p>Nullam scelerisque aliquam odio et faucibus.</p>
+              </div>
+              <div class="come__item">
+                <img src="img/svg/come-3.svg" alt="">
+                <p>Nulla rhoncus feugiat eros quis consectetur.</p>
+              </div>
+              <div class="come__item">
+                <img src="img/svg/come-4.svg" alt="">
+                <p>Morbi neque ex, condimentum.</p>
               </div>
             </div>
           </div>
         </div>
       </article>
+      <article class="article last">
+        <div class="container">
+          <div class="article__orange-rect"></div>
+          <div class="last__content">
+            <h3 class="last__title">We're already booked up for the spring — hurry up & secure your stay for the summer.</h3>
+            <p class="last__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+            <div class="last__buttons">
+              <a href="#" class="last__contact btn">Contact</a>
+              <a href="" class="last__book btn">Book now</a>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__pages">
+            <h3 class="footer__title">Pages</h3>
+            <ul>
+              <li><a href="">Start</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Our history</a></li>
+              <li><a href="">Licenses</a></li>
+              <li><a href="">Instructions</a></li>
+              <li><a href="">Style guide</a></li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__title">Social Media</h3>
+            <div class="">
+              <a href=""><img src="img/svg/social-1.svg" alt="Airbnb"></a>
+              <a href=""><img src="img/svg/social-2.svg" alt="Facebook"></a>
+              <a href=""><img src="img/svg/social-3.svg" alt="Instagram"></a>
+            </div>
+          </div>
+          <div class="footer__newsletter">
+            <h3 class="footer__title">Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <form action="">
+              <input type="email" name="" id="" placeholder="Email">
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <img src="img/svg/logo.svg" alt="" class="footer__logo">
+          <p class="footer__copy">© Guest House, LLC. All rights reserved. Powered by <span>Webflow</span></p>
+          <div class="footer__contacts">
+            <p>+47 (0) 702 88 12 34</p>
+            <p class="footer__mail">example@webflow.io</p>
+            <p>Klubbvika 12, 8310 Kabelvag, Norway</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script src="js/jquery-3.6.1.min.js"></script>

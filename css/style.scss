@@ -314,24 +314,18 @@ body{
   width: 100%;
   height: 600px;
   overflow: hidden;
-  source{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
   img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    @media (min-width: 768px) {
+      transition: all 0.2s ease 0s;
+      &:hover{
+        transform: scale(1.05)
+      }
+    }
   }
-  // @media (min-width: 768px) {
-  //   transition: all 0.2s ease 0s;
-  //   &:hover{
-  //     transform: scale(1.05)
-  //   }
-  // }
   @media (max-width: 991px) {
     height: 400px;
   }

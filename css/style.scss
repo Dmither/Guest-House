@@ -44,6 +44,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 19px 0;
+    @media (max-width: 991px) {
+      padding: 13px 0;
+    }
     @media (max-width: 767px) {
       padding: 8px 0;
     }
@@ -142,6 +145,9 @@ body{
 
 .main{
   padding-top: 83px;
+  @media (max-width: 991px) {
+    padding-top: 71px;
+  }
   @media (max-width: 767px) {
     padding-top: 46px;
   }
@@ -149,12 +155,16 @@ body{
 .intro {
   padding-top: 180px;
   padding-bottom: 80px;
-  // background-image: url(../img/jpg/intro-bg-2x.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
   position: relative;
   overflow: hidden;
+  @media (max-width: 991px) {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
   &__parallax{
     position: absolute;
     width: 120%;
@@ -177,6 +187,12 @@ body{
   &__logo {
     margin-bottom: 34px;
     width: 260px;
+    @media (max-width: 991px) {
+      margin-bottom: 26px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   &__title {
     margin-bottom: 34px;
@@ -184,6 +200,14 @@ body{
     line-height: 1.1;
     text-align: center;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      margin-bottom: 26px;
+      font-size: 36px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
   }
   &__subtitle {
     margin-bottom: 115px;
@@ -193,6 +217,12 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   &__mouse {
     width: 34px;
@@ -209,19 +239,34 @@ body{
       top: 10px;
       left: 14px;
     }
+    @media (max-width: 991px) {
+      margin-bottom: 26px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 .article {
+  padding-top: 100px;
+  padding-bottom: 100px;
   &__orange-rect {
     width: 42px;
     height: 8px;
     background-color: #E08631;
     margin: 0 auto 33px;
   }
+  @media (max-width: 991px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .description {
   background: #FAF8F0;
-  padding-top: 100px;
   padding-bottom: 90px;
   &__content{
     display: flex;
@@ -231,31 +276,61 @@ body{
   &__text {
     max-width: 360px;
   }
+  @media (max-width: 991px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+    &__content{
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
 }
 .slogan {
-  padding-top: 100px;
   padding-bottom: 140px;
+  font-size: 96px;
   &__content {
     font-weight: 700;
-    font-size: 96px;
     line-height: 1;
     text-align: center;
     color: #52503B;
   }
+  @media (max-width: 991px) {
+    padding-bottom: 80px;
+    font-size: 56px;
+
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
 }
-.kitchen{
+.poster{
   width: 100%;
   height: 600px;
   overflow: hidden;
   &>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease 0s;
     &:hover{
       transform: scale(1.05)
     }
-    transition: all 0.2s ease 0s;
+  }
+  @media (max-width: 991px) {
+    height: 400px;
+  }
+  @media (max-width: 767px) {
+    height: 200px;
   }
 }
 .sleeping {
-  padding: 100px 0;
   background-color: #FAF8F0;
   color: #52503B;
   &__content {
@@ -308,9 +383,36 @@ body{
       img{transform: scale(1.2);}
     }
   }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &__subtitle {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &__items {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__item {
+      img{
+        width: 32px; 
+        height: 32px; 
+        margin-bottom: 8px;
+      }
+      h3{
+        font-size: 14px;
+      }
+      &>p{
+        font-size: 12px;
+      }
+    }
+  }
 }
 .escape {
-  padding: 100px 0;
   color: #52503B;
   &__orange-rect {
     margin: 0 0 33px;
@@ -344,9 +446,35 @@ body{
     }
     &:hover{transform: translate(5px);}
   }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &__items {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      transition: all 0.2s ease 0s;
+      img{
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+      }
+      div{
+        font-size: 12px;
+      }
+    }
+  }
 }
 .past {
-  padding-top: 100px;
   padding-bottom: 70px;
   background-color: #FAF8F0;
   color: #52503B;
@@ -369,6 +497,23 @@ body{
     max-width: 572px;
   }
   &__slider {
+
+  }
+  @media (max-width: 991px) {
+    padding-bottom: 50px;
+    
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+    &__title {
+      font-size: 24px;
+      margin-bottom: 11px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+      max-width: 572px;
+    }
   }
 }
 .card {
@@ -409,20 +554,28 @@ body{
       background-color: #E08631;
     }
   }
-}
-.bedroom{
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  &>img{
-    &:hover{
-      transform: scale(1.05)
+  @media (max-width: 767px) {
+    padding: 25px;
+    &__stars {
+      margin-bottom: 8px;
     }
-    transition: all 0.2s ease 0s;
+    &__title {
+      font-size: 16px;
+      margin-bottom: 9px;
+    }
+    &__text {
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+    &__guest {
+      font-size: 12px;
+      &::before{
+        height: 17px;
+      }
+    }
   }
 }
 .come {
-  padding-top: 100px;
   padding-bottom: 120px;
   color: #52503B;
   &__content {
@@ -467,9 +620,59 @@ body{
     &:hover{transform: translate(5px);}
     transition: all 0.2s ease 0s;
   }
+  @media (max-width: 991px) {
+    padding-bottom: 90px;
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    &__main {
+      max-width: 280px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 11px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__items {
+      gap: 20px 10px ;
+    }
+    &__item {
+      display: flex;
+      max-width: 200px;
+      position: relative;
+      padding-left: 36px;
+      img{
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+      &:hover{transform: translate(5px);}
+      transition: all 0.2s ease 0s;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 45px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &__items {
+      max-width: 410px;
+      justify-content: center;
+    }
+  }
 }
 .last {
-  padding: 100px 0;
   background-color: #FAF8F0;
   color: #52503B;
   &__content {
@@ -510,13 +713,26 @@ body{
     text-align: center;
     color: #FFFFFF;
   }
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+    &__title {
+      font-size: 24px;
+      margin-bottom: 11px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+      max-width: 572px;
+    }
+  }
 }
 .footer {
   background-color: #52503B;
   padding: 100px 0 110px;
   &__top {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 30px;
     margin-bottom: 48px;
   }
   &__title {
@@ -586,7 +802,7 @@ body{
         &:hover, &:focus{
           border: 1px solid #52503B;
           border-radius: 10px;
-          padding: 6px 12px 6px 25px;
+          padding: 6px 11px 6px 25px;
         }
       }
       button{
@@ -615,6 +831,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   &__mail{
     display: flex;
@@ -623,6 +842,17 @@ body{
       content: '—';
       display: block;
       width: 22px;
+    }
+  }
+  @media (max-width: 991px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__contacts {
+      flex-direction: column;
     }
   }
 }

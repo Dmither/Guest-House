@@ -27,10 +27,11 @@ body{
   font-size: 16px;
   line-height: 20px;
   color: #52503B;
-  transition: all 0.2s ease 0s;
-  &:hover, &:focus{transform: scale(1.05);}
+  @media (min-width: 768px) {
+    transition: all 0.2s ease 0s;
+    &:hover, &:focus{transform: scale(1.05);}
+  }
 }
-
 .wrapper{
   width: 100%;
 }
@@ -318,9 +319,11 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: all 0.2s ease 0s;
-    &:hover{
-      transform: scale(1.05)
+    @media (min-width: 768px) {
+      transition: all 0.2s ease 0s;
+      &:hover{
+        transform: scale(1.05)
+      }
     }
   }
   @media (max-width: 991px) {
@@ -359,12 +362,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.2s ease 0s;
+    
     img{
       width: 64px; 
       height: 64px; 
       margin-bottom: 12px;
-      transition: all 0.2s ease 0s;
     }
     h3{
       font-size: 16px;
@@ -378,9 +380,15 @@ body{
       line-height: 1.43;
       text-align: center;
     }
-    &:hover{
-      transform:translate(0, 5%);
-      img{transform: scale(1.2);}
+    @media (min-width: 768px) {
+      transition: all 0.2s ease 0s;
+      &:hover{
+        transform:translate(0, 5%);
+        img{
+          transition: all 0.2s ease 0s;
+          transform: scale(1.2);
+        }
+      }
     }
   }
   @media (max-width: 767px) {
@@ -434,7 +442,6 @@ body{
   }
   &__item {
     display: flex;
-    transition: all 0.2s ease 0s;
     img{
       width: 36px;
       height: 36px;
@@ -444,7 +451,10 @@ body{
       font-size: 14px;
       line-height: 1.43;
     }
-    &:hover{transform: translate(5px);}
+    @media (min-width: 768px) {
+      transition: all 0.2s ease 0s;      
+      &:hover{transform: translate(5px);}
+    }
   }
   @media (max-width: 767px) {
     &__title {
@@ -617,8 +627,10 @@ body{
       height: 36px;
       object-fit: contain;
     }
-    &:hover{transform: translate(5px);}
-    transition: all 0.2s ease 0s;
+    @media (min-width: 768px) {
+      &:hover{transform: translate(5px);}
+      transition: all 0.2s ease 0s;
+    }
   }
   @media (max-width: 991px) {
     padding-bottom: 90px;
@@ -653,8 +665,6 @@ body{
         height: 24px;
         object-fit: contain;
       }
-      &:hover{transform: translate(5px);}
-      transition: all 0.2s ease 0s;
     }
   }
   @media (max-width: 767px) {
@@ -755,8 +765,10 @@ body{
           padding: 5px 0;
           line-height: 1.43;
           color: #FFFFFF;
-          &:hover, &:focus{transform: translate(15px);}
-          transition: all 0.2s ease 0s;
+          @media (min-width: 768px) {
+            &:hover, &:focus{transform: translate(15px);}
+            transition: all 0.2s ease 0s;
+          }
         }
       }
     }
@@ -768,8 +780,10 @@ body{
       justify-content: space-between;
       width: 130px;
       &>a{
-        &:hover, &:focus{transform: scale(1.3);}
-        transition: all 0.2s ease 0s;
+        @media (min-width: 768px) {
+          &:hover, &:focus{transform: scale(1.3);}
+          transition: all 0.2s ease 0s;
+        }
       }
     }
   }

@@ -194,15 +194,28 @@ body {
 .intro {
   padding-top: 180px;
   padding-bottom: 80px;
-  background-image: url(../img/jpg/intro-bg-2x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.intro__parallax {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+}
+.intro__background {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .intro__content {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 .intro__logo {
   margin-bottom: 34px;
@@ -276,15 +289,14 @@ body {
 }
 
 .kitchen {
-  background-image: url(../img/jpg/kitchen.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 25%;
   width: 100%;
   height: 600px;
+  overflow: hidden;
+}
+.kitchen > img {
   transition: all 0.2s ease 0s;
 }
-.kitchen:hover {
+.kitchen > img:hover {
   transform: scale(1.05);
 }
 
@@ -452,17 +464,13 @@ body {
 
 .bedroom {
   width: 100%;
+  height: 600px;
   overflow: hidden;
 }
-.bedroom img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+.bedroom > img {
   transition: all 0.2s ease 0s;
 }
-.bedroom img:hover {
+.bedroom > img:hover {
   transform: scale(1.05);
 }
 

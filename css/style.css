@@ -404,21 +404,21 @@ body {
   height: 600px;
   overflow: hidden;
 }
-.poster > img {
-  width: 100%;
+.poster source {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
-@media (min-width: 768px) {
-  .poster > img {
-    transition: all 0.2s ease 0s;
-  }
-  .poster > img:hover {
-    transform: scale(1.05);
-  }
+.poster img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (max-width: 991px) {
   .poster {

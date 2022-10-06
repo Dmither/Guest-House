@@ -46,8 +46,11 @@
           </div>
         </div>
         <div class="intro__parallax">
-          
-          <img src="img/webp/intro-bg-2x.webp" alt="" class="intro__background">
+          <picture>
+            <source srcset="img/webp/intro-bg-2x.webp" type="image/webp" media="(min-width: 992px)">
+            <source srcset="img/webp/intro-bg.webp" media="(max-width: 767px)">
+            <img src="img/webp/intro-bg.webp" alt="" class="intro__background">
+          </picture>
         </div>
       </section>
       <div class="article description">
@@ -66,7 +69,11 @@
         </div>
       </section>
       <div class="kitchen poster">
-        <img src="img/webp/kitchen.webp" alt="">
+        <picture>
+          <source srcset="img\webp\kitchen.webp" media="(min-width: 768px)">
+          <source srcset="img/webp/kitchen-05x.webp 1x" media="(max-width: 767px)">
+          <img src="img/webp/kitchen-05x.webp" alt="">
+        </picture>
       </div>
       <section class="article sleeping">
         <div class="container">
@@ -181,7 +188,11 @@
         </div>
       </section>
       <div class="bedroom poster">
-        <img src="img/webp/bedroom.webp" alt="">
+        <picture>
+          <source srcset="img/webp/bedroom.webp" type="image/webp" media="(min-width:768px)">
+          <source srcset="img/webp/bedroom-05x.webp" type="image/webp" media="(max-width:767px)">
+          <img src="img/webp/bedroom-05x.webp" alt="">
+        </picture>
       </div>
       <section class="article come">
         <div class="container">

@@ -47,4 +47,12 @@ new Swiper('.past__slider', {
   grabCursor: true,     // зміна вигляду курсору (рука)
   slidesPerView: 2,  // к-ть слайдів для показа (можна дробове)
   spaceBetween: 20,
+  breakpoints: {        // адаптивність (mobile-first)
+    320: {              // @media (min-width: 320px)
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+  },
 });

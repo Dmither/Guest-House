@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Guest-House</title>
 </head>
@@ -174,15 +175,45 @@
           <div class="past__content">
             <h3 class="past__title">Past guests.</h3>
             <p class="past__text">Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.</p>
-            <div class="past__slider">
-              <div class="past__card card">
-                <div class="card__stars">
-                  <img src="img/svg/star.svg" alt="">
+            <div class="past__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide card swiper-slide">
+                  <div class="card__stars">
+                    <img src="img/svg/star.svg" alt="">
+                  </div>
+                  <h4 class="card__title">We had an amazing stay at the Guest House!</h4>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                  <p class="card__guest">Nate Davidsson</p>
                 </div>
-                <h4 class="card__title">We had an amazing stay at the Guest House!</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                <p class="card__guest">Nate Davidsson</p>
+                <div class="slider__slide card swiper-slide">
+                  <div class="card__stars">
+                    <img src="img/svg/star.svg" alt="">
+                  </div>
+                  <h4 class="card__title">Beautiful little hideaway.</h4>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</p>
+                  <p class="card__guest">Laura Paulie</p>
+                </div>
+                <div class="slider__slide card swiper-slide">
+                  <div class="card__stars">
+                    <img src="img/svg/star.svg" alt="">
+                  </div>
+                  <h4 class="card__title">Lorem ipsum dolor sit amet.</h4>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis veritatis similique dolorum, cumque incidunt quia illum quisquam corrupti nihil magnam temporibus aliquid iusto exercitationem dolores iste nesciunt, laborum quae numquam.</p>
+                  <p class="card__guest">Lorem, ipsum.</p>
+                </div>
+                <div class="slider__slide card swiper-slide">
+                  <div class="card__stars">
+                    <img src="img/svg/star.svg" alt="">
+                  </div>
+                  <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
+                  <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempore sequi ab pariatur ratione?</p>
+                  <p class="card__guest">Suspendisse varius</p>
+                </div>
               </div>
+            </div>
+            <div class="past__nav">
+              <div class="past__prev"></div>
+              <div class="past__next"></div>
             </div>
           </div>
         </div>
@@ -282,6 +313,7 @@
   </div>
 
   <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

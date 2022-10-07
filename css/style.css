@@ -611,6 +611,22 @@ body {
   margin-bottom: 30px;
   max-width: 572px;
 }
+.past__slider {
+  min-width: 0;
+  margin-bottom: 20px;
+}
+.past__nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.past__prev, .past__next {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #52503B;
+  border-radius: 30px;
+}
 @media (max-width: 991px) {
   .past {
     padding-bottom: 50px;
@@ -629,6 +645,16 @@ body {
     margin-bottom: 20px;
     max-width: 572px;
   }
+}
+
+.slider {
+  width: 100%;
+}
+.slider__wrapper {
+  width: 100%;
+}
+.slider__slide {
+  width: 100%;
 }
 
 .card {

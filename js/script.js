@@ -35,3 +35,16 @@ window.onload = function(){
     });
   }
 }
+
+new Swiper('.past__slider', {
+  navigation: {
+    prevEl: '.past__prev',
+    nextEl: '.past__next',
+  },
+  simulateTouth: true,  // дозволяє свайп мишою
+  touchRatio: 1,        // чутливість свайпу (0 вимк на всії ппристроях)
+  touchAngle: 45,       // кут спрацювання свайпу
+  grabCursor: true,     // зміна вигляду курсору (рука)
+  slidesPerView: 2,  // к-ть слайдів для показа (можна дробове)
+  spaceBetween: 20,
+});

@@ -507,6 +507,20 @@ body{
     max-width: 572px;
   }
   &__slider {
+    min-width: 0;
+    margin-bottom: 20px;
+  }
+  &__nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  &__prev, &__next{
+    height: 60px;
+    width: 60px;
+    border: 2px solid #52503B;
+    border-radius: 30px;
 
   }
   @media (max-width: 991px) {
@@ -524,6 +538,15 @@ body{
       margin-bottom: 20px;
       max-width: 572px;
     }
+  }
+}
+.slider{
+  width: 100%;
+  &__wrapper{
+    width: 100%;
+  }
+  &__slide{
+    width: 100%;
   }
 }
 .card {

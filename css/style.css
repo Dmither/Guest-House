@@ -626,6 +626,7 @@ body {
   width: 60px;
   border: 2px solid #52503B;
   border-radius: 30px;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .past {
